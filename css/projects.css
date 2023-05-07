@@ -1,0 +1,118 @@
+.project 
+{
+    background-color: #F1F5F9;
+    padding-top: 20px;
+}
+.project>h1
+{
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.project .proj
+{
+    display: grid;
+    gap: 20px;
+    grid-template-columns:  repeat(auto-fill, minmax(450px, 1fr));
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.project .proj p
+{
+    color: #888;
+    font-size: 14px;
+}
+.proj .section
+{
+    background-color: white;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.section .name
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+.section .name .text
+{
+    margin-top: 15px;
+}
+.section .image
+{
+    display: flex;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+    position: relative;
+    min-height: 50px;
+}
+.section .image a
+{
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+}
+.section .image a:hover
+{
+    z-index: 1000;
+}
+.section .image a:nth-child(2)
+{
+    left: 25px;
+}
+.section .image a:nth-child(3)
+{
+    left: 50px;
+}
+.section .image a:nth-child(4)
+{
+    left: 75px;
+}
+.section .image img
+{
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.section .skil
+{
+    display: flex;
+    flex-direction:row;
+    /* margin-left: 43%; */
+    margin-right: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.section .skil p
+{
+    color: black;
+    background-color: #eee;
+    padding: 5px;
+    margin-right: 5px;
+    font-size: 14px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.section .prog
+{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}

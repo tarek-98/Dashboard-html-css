@@ -1,0 +1,283 @@
+.profile 
+{
+    background-color: #F1F5F9;
+    padding-top: 20px;
+}
+.profile>h1
+{
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+.profile .content
+{
+    display: flex;
+    background-color: white;
+    padding: 10px;
+    margin-right: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.profile .content .image
+{
+    flex-basis: 20%;
+    padding-left: 3%;
+    padding-top: 5%;
+    text-align: center;
+}
+.profile .content .image img
+{
+    width: 70%;
+    margin-bottom: 10px;
+}
+.profile .content .image h3
+{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.profile .content .image p
+{
+    color: #888;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.profile .content .image progress
+{
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 18px;
+}
+.profile .content .image i
+{
+    color: orange;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.profile .content .text
+{
+    flex-basis: 80%;
+    margin-left: 50px;
+}
+.profile .content .text .information
+{
+    padding: 10px;
+    padding-left: 30px;
+    border-bottom: 1px solid #eee;
+    border-left: 1px solid #eee;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.profile .content .text .information:hover
+{
+    background-color: #eee;
+}
+.profile .content .text #billing
+{
+    border-bottom: none;
+}
+.profile .content .text .information h3
+{
+    color: #888;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+.profile .content .text .information p
+{
+    display: inline;
+    color: #888;
+    margin-right: 100px;
+}
+.profile .content .text .information p span
+{
+    color: black;
+}
+
+.toggle-checkbox 
+{
+    -webkit-appearance: none;
+    appearance: none;
+    display: none;
+}
+.toggle-switch
+{
+    background-color: #ccc;
+    width: 90px;
+    height: 20px;
+    border-radius: 16px;
+    position: relative;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.toggle-checkbox:checked + .toggle-switch 
+{
+    background-color: var(--blue-alt-color);
+}
+
+.toggle-switch::before 
+{
+    font-family: var(--fa-style-family-classic);
+    content: "\f00d";
+    font-weight: 900;
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border-radius: 50%;
+    top: 3px;
+    left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #aaa;
+    transition: 0.3s;
+}
+.toggle-checkbox:checked + .toggle-switch::before 
+{
+    content: "\f00c";
+    left: 70px;
+    color: var(--blue-color);
+}
+
+
+#billing .toggle-checkbox 
+{
+    -webkit-appearance: none;
+    appearance: none;
+    display: none;
+}
+#billing .toggle-switch
+{
+    background-color: var(--blue-alt-color);
+    width: 90px;
+    height: 20px;
+    border-radius: 16px;
+    position: relative;
+    transition: 0.3s;
+    cursor: pointer;
+}
+#billing .toggle-checkbox:checked + .toggle-switch 
+{
+    background-color: #ccc;
+}
+
+#billing .toggle-switch::before 
+{
+    font-family: var(--fa-style-family-classic);
+    content: "\f00c ";
+    font-weight: 900;
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border-radius: 50%;
+    top: 3px;
+    left: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--blue-color);
+    transition: 0.3s;
+}
+#billing .toggle-checkbox:checked + .toggle-switch::before 
+{
+    content: "\f00d";
+    left: 5px;
+    color: #aaa;
+}
+
+/**/
+.profile .pro
+{
+    display: flex;
+    background-color: #F1F5F9;
+    margin-top: 20px;
+}
+.profile .pro p
+{
+    color: #888;
+}
+.profile .pro .skill,
+.profile .pro .activ
+{
+    background-color: white;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.profile .pro .skill
+{
+    flex-basis: 30%;
+    margin-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.pro .skill .sk
+{
+    margin-top: 25px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+.pro .skill #sk
+{
+    border: none;
+}
+.pro .skill .sk p 
+{
+    display: inline;
+    background-color: #eee;
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.profile .pro .activ
+{
+    flex-basis: 70%;
+    margin-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;  
+}
+.profile .pro .activ .act
+{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+.profile .pro .activ #act
+{
+    border: none;
+}
+.profile .pro .activ .image
+{
+    flex-basis: 65px;
+}
+.profile .pro .activ .image img
+{
+    width: 100%;
+}
+.profile .pro .activ .text
+{
+    flex-basis: 50%;
+    margin-left: 10px;
+}
+.profile .pro .activ .date
+{
+    flex-basis: 20%;
+    margin-left: 40%;
+}

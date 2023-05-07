@@ -1,0 +1,339 @@
+.settings 
+{
+    background-color: #F1F5F9;
+    padding-top: 20px;
+}
+.settings>h1
+{
+    margin-left: 30px;
+}
+.settings .parts
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    gap: 35px;
+    padding: 25px;
+}
+.settings .parts .control
+{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.parts .control h1
+{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.parts .control p
+{
+    color: #88888888;
+}
+.parts .control .con
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.parts .control .con h3
+{
+    font-size: 20px;
+}
+.parts .control textarea
+{
+    padding: 10px 0px 0 10px;
+    width: 100%;
+    resize: none;
+    border: 1px solid #88888888;
+}
+.parts .control textarea:focus
+{
+    outline: none;
+}
+.toggle-checkbox:checked + .toggle-switch 
+{
+    background-color: var(--blue-color);
+}
+.toggle-checkbox 
+{
+    -webkit-appearance: none;
+    appearance: none;
+    display: none;
+}
+.toggle-switch
+{
+    background-color: #ccc;
+    width: 78px;
+    height: 32px;
+    border-radius: 16px;
+    position: relative;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.toggle-checkbox:checked + .toggle-switch::before 
+{
+    content: "\f00c";
+    left: 50px;
+    color: var(--blue-color);
+}
+.toggle-switch::before 
+{
+    font-family: var(--fa-style-family-classic);
+    content: "\f00d";
+    font-weight: 900;
+    background-color: white;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    border-radius: 50%;
+    top: 4px;
+    left: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #aaa;
+    transition: 0.3s;
+}
+/**/
+.parts .info
+{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.parts .info h1
+{
+    font-size: 25px;
+}
+.parts .info p,
+.parts .info label
+{
+    color: #88888888;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.parts .info p
+{
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+.parts .info input
+{
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #88888888;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.parts .info input:focus
+{
+    outline: none;
+}
+.parts .info #email
+{
+    cursor: no-drop;
+    background-color: #F1F5F9;
+    display: inline;
+    width: calc(100% - 80px);
+    margin-right: 10px;
+}
+.parts .info a
+{
+    color: blue;
+}
+
+/**/
+.parts .security
+{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.parts .security h1
+{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.parts .security p
+{
+    color: #88888888;
+}
+.security .pass,
+.security .factor,
+.security .device
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.security .pass,
+.security .factor
+{
+    border-bottom: 1px solid #eeeeeeee;
+}
+.security .link
+{
+    margin-top: 10px;
+}
+.security .pass .link a
+{
+    color: white;
+    background-color: #0D69D5;
+    border-radius: 5px;
+    padding: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.security .pass .link a:hover
+{
+    background-color: blue;
+}
+.security .device .link a
+{
+    color: black;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+/**/
+
+.parts .social
+{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.parts .social h1
+{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.parts .social p
+{
+    color: #88888888;
+}
+.parts .social .form
+{
+    margin-top: 20px;
+}
+.parts .social .form .input
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+    background-color: #F6F6F6;
+}
+.parts .social .form .input i
+{
+    font-size: 20px;
+    padding: 10px;
+    border-right: 1px solid #eee;
+    color: #88888888;
+}
+.parts .social .form .input:focus-within i 
+{
+    color: black;
+}
+.parts .social .form .input input
+{
+    padding: 10px;
+    border: none;
+    background-color: #F6F6F6;
+    width: 90%;
+}
+.parts .social .form .input input:focus
+{
+    outline: none;
+}
+
+/**/
+.wedgit
+{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.wedgit h1
+{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.wedgit p
+{
+    color: #88888888;
+    margin-bottom: 20px;
+}
+.wedgit .wed input
+{
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+.wedgit .wed label
+{
+    width: 90%;
+    font-size: 17px;
+    cursor: pointer;
+}
+/**/
+.backup
+{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.backup h1
+{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.backup p
+{
+    color: #88888888;
+    margin-bottom: 20px;
+}
